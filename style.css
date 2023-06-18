@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,9 +8,9 @@ body{
     box-sizing: border-box;
     scroll-behavior: smooth;
     background: #FFFFFF;
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
 }
 img{
     max-width: 100%;
@@ -19,16 +18,26 @@ img{
 }
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
-header{
-    padding: 40px 0 ;
-    font-family: 'Open Sans';
-    margin-bottom: 94px;
+.content{
+    margin: 0 auto 259px auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto 84px auto;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
 }
 .navigation-link{
-    font-family: 'Open Sans';
     font-size: 14px;
     line-height: 16px;
     color: #000000;
@@ -37,10 +46,16 @@ header{
     color: #F25822
 }
 .header-text{
-    margin-top: 5px;
-    margin-left: 1033px;
-    margin-left: 43px;
-    margin-bottom: 5px;
+    margin: 5px 1033px 43px 5px;
+}
+.content-wrapper{
+    display: flex;
+    gap: 41px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content-block{
+    max-width: 502px;
 }
 .content-title{
     font-size: 60px;
@@ -53,11 +68,18 @@ header{
     line-height: 23px;
     color: #888888;
     margin-bottom: 37px;
+    font-weight: 500;
 }
+
+.content-buttons{
+    display: flex;
+    gap: 72px;
+}
+
 .content-buttons-button1{
+    font-weight: 700;
     width: 140px;
     height: 50px;
-    margin-right: 72px;
     border: 0px;
     background: #F25822;
     box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
@@ -66,9 +88,20 @@ header{
     line-height: 18px;
     color: #FFFFFF
 }
+
 .content-buttons-button2{
+    font-weight: 700;
     border: 0px;
     font-size: 15px;
     line-height: 18px;
     color: #AAAAAA;
+    background: #FFFFFF;
+}
+.content-image{
+    width: 610px;
+}
+.logos{
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
 }
